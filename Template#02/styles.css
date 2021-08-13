@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Start! */ 
+body{
+    background-color: black;
+    background: transparent;
+    color:white;
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+body::before
+{
+    content: " ";
+    
+    background: url('URWEBBACK.png') top right no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    left: 0;
+    top:0;
+    right:0;
+    position: fixed;
+    z-index: -1;
+
+}
+
+#header h1 a{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: lightseagreen;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+#header h1 a:hover{
+   color: white;
+   text-shadow: 2px 2px 3px black;
+}
+#header h2 span{
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: lightseagreen;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+#header h2 span:hover{
+  color:white;
+  text-shadow: 2px 2px 3px black;
+}
+#header h2 {
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: lightseagreen;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+
+#header h2:hover{
+  color: purple;
+  text-shadow: 2px 2px 3px black;
+}
+
+#header{
+    transition: all ease-in-out 0.3s;
+    align-items: center;
+    display: flex;
+    position: relative;
+    z-index: 997;
+    overflow-y: auto;
+    height: 100vh;
+}
+#header *{
+    transition: all ease-in-out 0.3s;
+}
+
+.btn{
+    font-family: 'Poppins', sans-serif;
+    background-color: #9921e8;
+    border-radius: 60px;
+    border: 2px solid white;
+    background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}
+.btn:hover{
+    background-color: #e4b5cb;
+    color:black;
+    background-image: linear-gradient(315deg, #e4b5cb 0%, #722ae6 74%);
+}
+
+.Social-icons{
+    margin-top: 40px;
+    display: flex;
+}
+.Social-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    background-color: purple;
+    color:white;
+    border-radius: 60%;
+}
+.Social-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    background-color: purple;
+    color:white;
+    border-radius: 60%;
+}
+
+.Social-icons a:hover{
+    
+    color:white;
+    background-color: #9921e8;
+    background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}
+
+
+
+/* Tara at iresponsive natin ! */
+
+@media (min-width:1052px)
+{
+    body::before
+    {
+        background-attachment: fixed;
+    }
+}
+@media (max-width:952px)
+{
+    #header h1 a{
+        font-size: 30px;
+    }
+    #header h2 span{
+        font-size: 20px;
+        line-height: 30px;
+    
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-links{
+        margin-top: 15px;
+    }
+   
+}
+/* ============================ For Nav ================================*/ 
+
+
+.nav-link{
+    color:lightseagreen !important;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    font-weight: 400px;
+
+
+}
+.fa{
+    color:lightseagreen !important;
+    font-size: 2rem;
+
+}
+
+.navbar-toggler{
+    border: 2px solid lightseagreen;
+    outline: 2px solid lightseagreen;
+}
+.navbar-toggler:hover{
+    border: 2px solid limegreen;
+    outline: 2px solid  limegreen;
+}
+
+.collapse{
+
+
+        margin-top: -600px;
+        margin-right: 200px;
+        transition: all ease-in-out 0.3s;
+}
+.collapse ul li a:hover{
+
+    color: limegreen !important;
+    background-color: rgba(32, 178, 171, 0.274);
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+   
+}
+
+
+/* Next is About */ 
+
+html{
+    scroll-behavior: smooth;
+}
+#about h3{
+    line-height: 2;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: purple;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+#about h3:hover{
+   color: lime;
+}
+#about h3 span{
+    line-height: 2;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: lightseagreen;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+#about p{
+    font-size: 20px;
+    background-color: rgba(124, 87, 124, 0.404);
+    color: white;
+    border-radius: 80px;
+    text-shadow: 2px 2px 3px black;
+ 
+}
+#about p:hover{
+    background-color: #4c4177;
+background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+    
+}
+
+#service h3{
+
+    line-height: 2;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: purple;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+#service h3:hover{
+    color: lightseagreen;
+    text-shadow: 2px 2px 3px black;
+}
+
+#new{
+
+    background: url('keep.jpg') top right no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    left: 0;
+    top:0;
+    right:0;
+    
+}
+#new h1{
+    line-height: 2;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: purple;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+#new h2 span{
+    line-height: 2;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: lightseagreen;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+#new h2 {
+    line-height: 2;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: lightseagreen;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+
+@media (max-width:952px)
+{
+    #about h3{
+        font-size: 20px;
+        transition: all ease-in-out 0.3s;
+        text-align: center;
+    }
+    #about h3 span{
+        font-size: 20px;
+        transition: all ease-in-out 0.3s;
+        text-align: center;
+    }
+    #about p{
+        font-size: 20px;
+        transition: all ease-in-out 0.3s;
+        text-align: center;
+    }
+    #new h1{
+        font-size: 20px;
+        transition: all ease-in-out 0.3s;
+        text-align: center;
+    }
+    #new h2 span{
+        font-size: 20px;
+        transition: all ease-in-out 0.3s;
+        text-align: center;
+    }
+    #new h2 {
+        font-size: 20px;
+        transition: all ease-in-out 0.3s;
+        text-align: center;
+    }
+}
+#portfolio h1{
+    
+    line-height: 2;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: purple;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+
+/* FOOOOOOTER */
+
+
+.footer{
+    background-color: rgba(0, 128, 128, 0.26);
+    height: 400px;
+    position: relative;
+
+}
+.footer-content{
+    border: 2px solid purple;
+    height: 400px;
+}
+.footer-bottom{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+.footer-content .navs ul li a{
+        list-style: none;
+
+}
